@@ -362,18 +362,6 @@ define Device/tplink_cpe610-v2
 endef
 TARGET_DEVICES += tplink_cpe610-v2
 
-<<<<<<< HEAD
-define Device/tplink_cpe710-v1
-  $(Device/tplink-safeloader-uimage)
-  SOC := qca9563
-  IMAGE_SIZE := 15680k
-  DEVICE_MODEL := CPE710
-  DEVICE_VARIANT := v1
-  DEVICE_PACKAGES := kmod-ath10k-ct ath10k-firmware-qca9888-ct
-  TPLINK_BOARD_ID := CPE710V1
-endef
-TARGET_DEVICES += tplink_cpe710-v1
-=======
 define Device/tplink_deco-m4r-v1v2
   $(Device/tplink-safeloader-uimage)
   SOC := qca9563
@@ -384,7 +372,6 @@ define Device/tplink_deco-m4r-v1v2
   SUPPORTED_DEVICES += deco-m4r-v1v2
 endef
 TARGET_DEVICES += tplink_deco-m4r-v1v2
->>>>>>> 0b2f7e3424 (Working modification for the Deco M4)
 
 define Device/tplink_deco-p9-v1v2
   $(Device/tplink-safeloader-uimage)
